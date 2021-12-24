@@ -13,7 +13,7 @@
 > 6. Reactotron configurado.
 
 ## Explicação do aplicativo no LinkedIn
-* [Explicação do aplicativo](https://www.linkedin.com/posts/carlos-ferreira)
+* [Explicação do aplicativo](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-react-reactnative-activity-6880182944728784896-Im2j)
 
 ## Páginas do app
 ![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/loginVazio.jpg)
