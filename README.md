@@ -1,4 +1,4 @@
-# SkillsClass 
+# Skills-class-app 
 
 ## Aplicação focada no gerenciamento de skills dos usuários cadastrados.
 
