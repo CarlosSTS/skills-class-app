@@ -29,7 +29,7 @@ const light = {
     avatar: '#121015',
   },
   SkillCard: {
-    title: '#FFF',
+    title: '#000',
     backgroundColor: '#737380',
   },
 };
