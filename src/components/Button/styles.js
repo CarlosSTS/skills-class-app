@@ -1,22 +1,34 @@
-import {StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
+import Feather from 'react-native-vector-icons/Feather';
 
-const styles = StyleSheet.create({
-  button: {
-    width: '100%',
-    height: 60,
-    borderRadius: 10,
-    marginTop: 20,
+export const Container = styled.TouchableOpacity`
+  width: 100%;
+  height: 60px;
+  background-color: ${({disabled, theme}) =>
+    !disabled
+      ? theme.button.backgroundColor
+      : theme.button.backgroundColorDisabled};
+  margin-top: 8px;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
 
-    justifyContent:'center',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginLeft: 8
-  },
-});
+export const Icon = styled(Feather)`
+  color: ${({theme}) => theme.button.icon};
+  padding-right: 16px;
+`;
 
-export default styles;
+export const Loading = styled.ActivityIndicator.attrs(({theme}) => ({
+  color: theme.button.loading,
+  size: 'small',
+}))`
+  padding-right: 16px;
+`;
+
+export const ButtonText = styled.Text`
+  font-weight: bold;
+  color: ${({theme}) => theme.button.title};
+  font-size: 18px;
+`;

@@ -1,15 +1,23 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import {StatusBar, useColorScheme} from 'react-native';
+import {ThemeProvider} from 'styled-components';
 import './config/reactotron';
 
 import Routes from './routes';
+import {theme as themes} from './common';
 
 const App = () => {
+  const deviceTheme = useColorScheme();
+  const theme = themes[deviceTheme] || themes.dark;
   return (
-    <>
-      <StatusBar barStyle="light-content" backgroundColor="#7159C1" />
+    <ThemeProvider theme={theme}>
+      <StatusBar
+        translucent={false}
+        barStyle="light-content"
+        backgroundColor={theme.statusBarColor}
+      />
       <Routes />
-    </>
+    </ThemeProvider>
   );
 };
 

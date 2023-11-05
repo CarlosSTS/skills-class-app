@@ -13,6 +13,7 @@
     "@react-native-community/async-storage": "^1.12.1",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
+    "polished": "4.2.2",
     "react": "17.0.2",
     "react-native": "0.67.2",
     "react-native-image-picker": "^4.6.0",
@@ -20,7 +21,8 @@
     "react-native-screens": "^3.10.1",
     "react-native-vector-icons": "^9.0.0",
     "reactotron-react-native": "^5.0.1",
-    "reinput": "^3.7.2"
+    "reinput": "^3.7.2",
+    "styled-components": "6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
