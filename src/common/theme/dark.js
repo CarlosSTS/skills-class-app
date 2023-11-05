@@ -27,6 +27,10 @@ const dark = {
     icon: '#FFF',
     avatar: '#121015',
   },
+  SkillCard: {
+    title: '#FFF',
+    backgroundColor: '#1F1E25',
+  },
 };
 
 export default dark;

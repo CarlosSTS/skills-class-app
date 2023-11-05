@@ -1,18 +1,18 @@
-import {StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-  buttonSkill: {
-    backgroundColor: '#1F1E25',
-    padding: 15,
-    borderRadius: 50,
-    alignItems: 'center',
-    marginVertical: 10,
-  },
-  skill: {
-    color: '#FFF',
-    fontSize: 22,
-    fontWeight: 'bold',
-  },
-});
+export const Title = styled.Text`
+  font-weight: bold;
+  color: ${({theme}) => theme.SkillCard.title};
+  font-size: 22px;
+`;
 
-export default styles;
+export const ButtonSkill = styled.TouchableOpacity`
+  width: 100%;
+  background-color: ${({theme}) => theme.SkillCard.backgroundColor};
+  padding: 15px;
+  border-radius: 50px;
+  margin: 10px 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;

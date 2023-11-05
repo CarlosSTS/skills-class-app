@@ -16,7 +16,7 @@ const light = {
     loading: '#000',
   },
   input: {
-    color: '#000',
+    color: '#FFF',
     icon: '#000',
     activeColor: '#A370F7',
     errorColor: '#F53030',
@@ -27,6 +27,10 @@ const light = {
     grettings: '#000',
     icon: '#000',
     avatar: '#121015',
+  },
+  SkillCard: {
+    title: '#FFF',
+    backgroundColor: '#737380',
   },
 };
 
