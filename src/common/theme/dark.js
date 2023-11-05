@@ -20,6 +20,7 @@ const dark = {
     activeColor: '#A370F7',
     errorColor: '#F53030',
     background: '#1F1E25',
+    placeholder: '#666',
   },
   header: {
     title: '#FFF',

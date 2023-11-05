@@ -89,7 +89,6 @@ class Home extends Component {
           autoCapitalize="words"
           autoCorrect={false}
           placeholder="New Skill"
-          placeholderTextColor="#666"
           value={newSkill}
           onChangeText={text => this.setState({newSkill: text})}
           returnKeyType="send"

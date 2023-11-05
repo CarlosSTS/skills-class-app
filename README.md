@@ -11,15 +11,25 @@
 > 4. Utilização de icones,navegação e inputs personalizados.
 > 5. Uso de ClassComponents para estudos pessoais.
 > 6. Reactotron configurado.
+> 7. Adição de themas dark e light.
 
 ## Explicação do aplicativo no LinkedIn
-* [Explicação do aplicativo](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-react-reactnative-activity-6880182944728784896-Im2j)
+* [v1.0.0](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-react-reactnative-activity-6880182944728784896-Im2j)
+* [v1.0.1]()
 
 ## Páginas do app
-![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/loginVazio.jpg)
-![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/login.jpg)
-![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/home.jpg)
-![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/skills.jpg)
+
+### v1.0.0
+![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/loginVazio.jpg)
+![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/login.jpeg)
+![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/home.jpg)
+![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/skills.jpg)
+
+### v1.0.1
+![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/light/loginVazio.jpg)
+![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/light/login.jpeg)
+![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/light/home.jpg)
+![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/light/skills.jpg)
 
 ## MOBILE
 RODANDO O PROJETO MOBILE

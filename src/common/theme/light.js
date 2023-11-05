@@ -16,11 +16,12 @@ const light = {
     loading: '#000',
   },
   input: {
-    color: '#FFF',
+    color: '#000',
     icon: '#000',
     activeColor: '#A370F7',
     errorColor: '#F53030',
-    background: '#1F1E25',
+    background: '#737380',
+    placeholder: '#DDD',
   },
   header: {
     title: '#000',

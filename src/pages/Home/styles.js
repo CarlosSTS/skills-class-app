@@ -16,7 +16,9 @@ export const Title = styled.Text`
   margin: 50px 0;
 `;
 
-export const Input = styled.TextInput`
+export const Input = styled.TextInput.attrs(({theme}) => ({
+  placeholderTextColor: theme.input.placeholder,
+}))`
   width: 100%;
   height: 46px;
   background-color: ${({theme}) => theme.input.background};
