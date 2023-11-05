@@ -1,28 +1,28 @@
-import {StyleSheet, Platform} from 'react-native';
+import {Platform} from 'react-native';
+import styled from 'styled-components/native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#121015',
-    paddingHorizontal: 20,
-    paddingVertical: 70,
-    paddingHorizontal: 30,
-  },
-  title: {
-    color: '#FFF',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  input: {
-    width: '100%',
-    height: 46,
-    backgroundColor: '#1F1E25',
-    color: '#FFF',
-    fontSize: 18,
-    padding: Platform.OS === 'ios' ? 15 : 10,
-    marginTop: 30,
-    borderRadius: 8,
-  },
-});
+export const Container = styled.View`
+  flex: 1;
+  background-color: ${({theme}) => theme.backgroundColor};
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+`;
 
-export default styles;
+export const Title = styled.Text`
+  font-weight: bold;
+  color: ${({theme}) => theme.title};
+  font-size: 24px;
+  margin: 50px 0;
+`;
+
+export const Input = styled.TextInput`
+  width: 100%;
+  height: 46px;
+  background-color: ${({theme}) => theme.input.background};
+  color: ${({theme}) => theme.input.color};
+  font-size: 18px;
+  padding: ${Platform.OS === 'ios' ? 15 : 10}px;
+  margin: 30px 0;
+  border-radius: 8px;
+`;

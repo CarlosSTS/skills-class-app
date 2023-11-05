@@ -73,7 +73,7 @@ const SignIn = () => {
               onChangeText={setNewUser}
               onSubmitEditing={handleSign}
               label="Adicione seu nome"
-              icon={<Icon error={error} name="user" size={20} />}
+              icon={<Icon error={!!error} name="user" size={20} />}
               error={error}
               returnKeyType="send"
             />

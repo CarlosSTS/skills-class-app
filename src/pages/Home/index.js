@@ -1,20 +1,11 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  TextInput,
-  Keyboard,
-  Alert,
-} from 'react-native';
+import {FlatList, Keyboard, Alert} from 'react-native';
 
 import AsyncStorage from '@react-native-community/async-storage';
 
-import Header from '../../components/Header';
-import Button from '../../components/Button';
-import SkillCard from '../../components/SkillCard';
+import {Header, Button, SkillCard} from '../../components';
 
-import styles from './styles';
+import {Container, Input, Title} from './styles';
 
 class Home extends Component {
   state = {
@@ -26,11 +17,14 @@ class Home extends Component {
   handleNewAddSkill = () => {
     const {newSkill, skills} = this.state;
     if (newSkill === '') {
-      Alert.alert('Oops', 'Você precisa adicionar uma skill');
+      Alert.alert('Erro ao adicionar uma skill', 'Você precisa adicionar algo');
       return;
     }
     if (skills.find(skill => skill === newSkill)) {
-      Alert.alert('Oops', 'Você já adicionou essa skill');
+      Alert.alert(
+        'Erro ao adicionar uma skill',
+        'Você já adicionou essa skill',
+      );
       return;
     }
 
@@ -88,10 +82,10 @@ class Home extends Component {
     const {newSkill, skills, loading} = this.state;
 
     return (
-      <View style={styles.container}>
+      <Container>
         <Header />
-        <TextInput
-          style={styles.input}
+
+        <Input
           autoCapitalize="words"
           autoCorrect={false}
           placeholder="New Skill"
@@ -101,15 +95,11 @@ class Home extends Component {
           returnKeyType="send"
           onSubmitEditing={this.handleNewAddSkill}
         />
-
         <Button icon="plus-circle" onPress={this.handleNewAddSkill}>
           ADD
         </Button>
 
-        <Text style={[styles.title, {marginVertical: 50}]}>
-          My Skills: {skills.length}
-        </Text>
-
+        <Title> My Skills: {skills.length}</Title>
         {loading ? (
           <SkillCard>Loading...</SkillCard>
         ) : (
@@ -125,7 +115,7 @@ class Home extends Component {
             )}
           />
         )}
-      </View>
+      </Container>
     );
   }
 }

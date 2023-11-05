@@ -20,6 +20,13 @@ const light = {
     icon: '#000',
     activeColor: '#A370F7',
     errorColor: '#F53030',
+    background: '#1F1E25',
+  },
+  header: {
+    title: '#000',
+    grettings: '#000',
+    icon: '#000',
+    avatar: '#121015',
   },
 };
 

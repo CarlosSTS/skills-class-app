@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
-import {View, Text, Image, TouchableWithoutFeedback, Alert} from 'react-native';
+import {View, TouchableWithoutFeedback, Alert} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import {launchImageLibrary} from 'react-native-image-picker';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import styles from './styles';
+import {
+  AddPhotoIcon,
+  Avatar,
+  CameraIcon,
+  ContainerHeader,
+  Grettings,
+  Title,
+} from './styles';
 
 class Header extends Component {
   state = {
@@ -15,11 +20,17 @@ class Header extends Component {
     user: '',
   };
 
-  handleAddImageAvatar = async data => {
-    const {image} = this.state;
+  handleClearPhoto = async () => {
+    try {
+      await AsyncStorage.removeItem('image');
+      this.setState({image: ''});
+    } catch (error) {
+    } finally {
+    }
+  };
 
+  handleAddImageAvatar = async data => {
     if (data.didCancel) {
-      Alert.alert('Aviso', 'Seleção de imagem cancelada');
       return;
     }
     if (data.error) {
@@ -34,6 +45,44 @@ class Header extends Component {
     }
     await AsyncStorage.setItem('image', uri);
     this.setState({image: uri});
+  };
+
+  handleSelectImage = async () => {
+    const {image} = this.state;
+
+    if (image) {
+      Alert.alert(
+        'Seleção de imagem',
+        'O que você gostaria de fazer ?',
+        [
+          {
+            text: 'Alterar imagem de perfil',
+            style: 'default',
+            onPress: () =>
+              launchImageLibrary(
+                {mediaType: 'photo', selectionLimit: 1, quality: 1},
+                this.handleAddImageAvatar,
+              ),
+          },
+          {
+            text: 'Remover foto',
+            style: 'default',
+            onPress: this.handleClearPhoto,
+          },
+          {
+            text: 'Cancelar',
+            style: 'cancel',
+            onPress: () => {},
+          },
+        ],
+        {cancelable: true},
+      );
+      return;
+    }
+    await launchImageLibrary(
+      {mediaType: 'photo', selectionLimit: 1, quality: 1},
+      this.handleAddImageAvatar,
+    );
   };
 
   async componentDidMount() {
@@ -63,40 +112,24 @@ class Header extends Component {
   render() {
     const {user, image, loading, gretting} = this.state;
     return (
-      <View style={styles.containerHeader}>
+      <ContainerHeader>
         <View>
-          <Text style={styles.title}>Welcome,{user}</Text>
-          <Text style={styles.grettings}>
+          <Title>Welcome,{user}</Title>
+          <Grettings>
             {gretting || 'Não foi possivel definir a hora atual'}
-          </Text>
+          </Grettings>
         </View>
-        <TouchableWithoutFeedback
-          onPress={() =>
-            launchImageLibrary(
-              {mediaType: 'photo', selectionLimit: 1, quality: 1},
-              this.handleAddImageAvatar,
-            )
-          }>
+        <TouchableWithoutFeedback onPress={this.handleSelectImage}>
           {image ? (
             <>
-              <Image style={styles.avatar} source={{uri: image}} />
-              <MaterialIcons
-                style={styles.addIcon}
-                name="add-a-photo"
-                color="#FFF"
-                size={24}
-              />
+              <Avatar source={{uri: image}} />
+              <AddPhotoIcon onPress={this.handleSelectImage} />
             </>
           ) : (
-            <MaterialCommunityIcons
-              name="camera-plus"
-              size={60}
-              color="#FFF"
-              style={{marginBottom: 8}}
-            />
+            <CameraIcon />
           )}
         </TouchableWithoutFeedback>
-      </View>
+      </ContainerHeader>
     );
   }
 }

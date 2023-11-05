@@ -19,6 +19,13 @@ const dark = {
     icon: '#FFF',
     activeColor: '#A370F7',
     errorColor: '#F53030',
+    background: '#1F1E25',
+  },
+  header: {
+    title: '#FFF',
+    grettings: '#FFF',
+    icon: '#FFF',
+    avatar: '#121015',
   },
 };
 
