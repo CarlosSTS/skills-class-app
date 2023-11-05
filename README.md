@@ -15,7 +15,7 @@
 
 ## Explicação do aplicativo no LinkedIn
 * [v1.0.0](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-react-reactnative-activity-6880182944728784896-Im2j)
-* [v1.0.1]()
+* [v1.0.1](https://www.linkedin.com/posts/carlos-ferreira-4b2ba219a_js-react-reactnative-activity-7127072462978113536-P5OR?utm_source=share&utm_medium=member_desktop)
 
 ## Páginas do app
 
