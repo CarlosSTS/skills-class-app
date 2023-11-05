@@ -26,10 +26,10 @@
 ![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/skills.jpg)
 
 ### v1.0.1
-![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/light/loginVazio.jpg)
+![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/light/loginVazio.jpeg)
 ![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/light/login.jpeg)
-![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/light/home.jpg)
-![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/light/skills.jpg)
+![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/light/home.jpeg)
+![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/light/skills.jpeg)
 
 ## MOBILE
 RODANDO O PROJETO MOBILE
