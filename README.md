@@ -20,16 +20,34 @@
 ## Páginas do app
 
 ### v1.0.0 com dark mode
-![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/loginVazio.jpg)
-![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/login.jpeg)
-![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/home.jpg)
-![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/dark/skills.jpg)
+
+<table>
+  <tr>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/dark/loginVazio.png" alt="Foto do App LoginVazio" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/dark/login.png" alt="Foto do App Login" width="360" /></td>
+</tr>
+</table>
+
+<table>
+  <tr>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/dark/home.png" alt="Foto do App Home" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/dark/skills.png" alt="Foto do App Skills" width="360" /></td>
+</tr>
+</table>
 
 ### v1.0.1 com light mode
-![Foto do App LoginVazio](https://github.com/CarlosSTS/skills-class/blob/master/images/light/loginVazio.jpeg)
-![Foto do App Login](https://github.com/CarlosSTS/skills-class/blob/master/images/light/login.jpeg)
-![Foto do App Home](https://github.com/CarlosSTS/skills-class/blob/master/images/light/home.jpeg)
-![Foto do App Skills](https://github.com/CarlosSTS/skills-class/blob/master/images/light/skills.jpeg)
+<table>
+  <tr>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/light/loginVazio.png" alt="Foto do App loginVazio" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/light/login.png" alt="Foto do App Login" width="360" /></td>
+</tr>
+</table>
+<table>
+  <tr>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/light/home.png" alt="Foto do App Home" width="360" /></td>
+<td><img src="https://github.com/CarlosSTS/skills-class/blob/master/images/light/skills.png" alt="Foto do App Skills" width="360" /></td>
+</tr>
+</table>
 
 ## MOBILE
 RODANDO O PROJETO MOBILE
